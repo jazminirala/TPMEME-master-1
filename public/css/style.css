@@ -1,0 +1,347 @@
+@font-face{
+    font-family: "miFuente";
+    src: url(../css/fuentes/palitoon.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/*.logo{
+    float: left; 
+    display: inline; 
+    padding: -5px; 
+    margin: 5px;
+} 
+
+*/
+
+body {
+    margin: 0;
+  }
+
+
+/*h1, h2, h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+*/
+
+
+
+
+.titulo{    
+    padding-left: 540px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    justify-content: center;
+    margin: auto;
+    font-family: "miFuente";
+    color: slategrey;
+
+}
+
+/*-----------------Estilos del header--------------------------*/
+.header{
+    height: 470px; /*altura*/
+}
+
+.header .contenedor {
+    display: flex; /*para que se coloque uno al lado del otro*/
+    justify-content: space-between; /*para que el logo y el menu se coloque c/u en un extremo.*/
+}
+
+.logo, .icon-menuu {
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menuu {
+    display: block; /*porque no es un elemento de bloque es un elemento de línea*/
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #fba919;
+    text-align: center; /*centrar texto*/
+    line-height: 45px; /*centrado y vertical*/
+    border-radius: 5px; /*para que sea un poco redondeado*/
+    margin-left: auto; /*para que se vea bien en mozilla*/
+    cursor: pointer; /*al pasar el mouse por encima se vuelve manito*/
+    margin-top: -720px;
+    margin-right: 40px;
+
+}
+
+
+
+/*---------------------Estilos de MENU----------------*/
+
+.nav {
+    position: absolute; /*para que corra de donde estaba*/
+    top: 60px; /*para que esté debajo del menu*/ 
+    left: -100%; /*para que se vaya a la izquierda*/
+    width: 100%;
+    transition: all 0.4s;
+    
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "miFuente";
+    font-size: 20px;
+    margin-top: -730px;
+    margin-right: 90%;
+    
+}
+
+.menu__link {  /*son las etiquetas a*/
+    display: block; /*porque la etiqueta a no es un elemento de bloque es un elemento de línea*/
+    padding: 20px;
+    background: #fba919;
+    text-decoration: none; /*para sacar el subrayado*/
+    color: #fff;
+   
+
+}
+
+.menu__link:hover, .select {  /*hover evento para pasar el mouse y cambie de color*/
+    background: white;
+    color: #fba919;
+}
+
+.mostrar {
+    left: 0; /*hace que se vuelva a su posición original a ver nuestro nav - left: -100% que pusimos*/
+}
+
+/*-------------------------Estilos del Banner-----------------------*/
+.banner__chico {
+    margin-top: -668px;
+}
+
+.banner__total {
+   
+    position: relative;
+  /*  z-index: -1000; Esto era lo que hacía que no se pudiese clickear, bloqueaba el pointer */
+  }
+  
+ .header .contenedor {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    font-family: "miFuente";
+    color: dimgray;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+
+  
+ 
+  .banner__txt {
+    display: none;
+  } 
+
+/*-------- Estilos de info Tendencia y Populares ------*/
+
+.filter {
+    list-style: none;
+}
+
+
+
+.info{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 60px;
+    margin-left: 300px;
+    
+   
+
+}
+
+.info__img{
+        margin-left: -20px;
+        
+
+}
+    
+
+.info__columna {
+      
+    background: #fba919;
+     color: #fff;
+     width: 250px;
+     padding: 10px;
+     font-family: "mifuente";
+     left: 300px;
+     margin-left: 100px;
+     
+}
+
+
+
+.info__titulo:hover {
+    background: #fff;
+    color: #FBA919;
+    cursor: pointer;
+}
+
+                                   
+
+.favoritos {
+    background:  dimgray;
+     color: #fff;
+    font-family: "mifuente";
+    text-align: center;
+    font-size: 30px;
+    
+
+   
+}
+
+.icon-favorito {
+    
+    color: #FBA919;
+    cursor: pointer;
+
+
+
+}
+
+
+/*    <a href="https://www.t13.cl/noticia/tendencias/bbc/agujero-negro-punto-de-no-retorno-imagen"><span class="icon-favorito"></a> </span>
+                                <span class= "comentarioAnillo"> "Ojo de Sauron fallido"</span>*
+                                
+                                
+                                 <a class="icon-favorito" href="https://www.t13.cl/noticia/tendencias/bbc/agujero-negro-punto-de-no-retorno-imagen"></a>/
+
+
+/*------------ Estilos catálogo -----*/
+
+.seccion__titulocatalogo{
+    text-align: center;
+    color: #FBA919;
+    font-family: "miFuente";
+    font-size: 30px;
+    
+}
+
+.catalogo{
+    display: flex;
+    flex-flow: row wrap;
+    cursor: pointer;
+}
+
+.collage{
+    flex: 1 1 33%;
+    
+}
+
+.collage img{
+    width: 444px;
+
+}
+
+.titulo-corazon {
+    display: inline;
+    margin: 0 5px;
+    padding: 0 5px;
+    font-family: "miFuente";
+    font-size: 30px;
+
+}
+
+a.icon-favorito {
+    margin: 0 5px;
+}
+
+/*-----------------Estilos de footer-----------------*/
+
+.footer {
+    background-color: #fba919;
+    padding: 50px;
+    text-align: center;
+    font-family: "mifuente";
+  }
+  
+  .footer .social [class^="icon-"] {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: #FBA919;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+  }
+
+  .img_meme{
+    flex: 1 1 33%;
+    width: 350px;
+    height: 350px;
+  }
+
+
+
+/*----------------- LOGIN -----------------*/
+
+.loginEnviar {
+    margin-left: 500px; /*para que se vaya a la derecha*/
+    margin-bottom: 10px;
+    margin-top: -30px;
+        
+}
+
+
+.form {
+    border: none;      
+ 
+}
+
+.text-input {
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 45%;
+    display: block;
+    font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.text-input-label {
+    font-size: 19px;
+    display: block;
+    font-family: "miFuente";
+    
+
+}
+
+.button {
+    border: none;
+    background-color: #FBA919;
+    color: white;
+    font-size: 20px;
+    font-family: "miFuente";
+    padding: 5px;
+}
+
+.button.login {
+    margin-top: 10px;
+    margin-left: 170px;
+    
+    
+    
+    
+}

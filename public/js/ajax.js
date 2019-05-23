@@ -80,7 +80,9 @@ function dibujaMemeClasico(datos){
 	
 		    let img = document.createElement("img");
 		    img.setAttribute("class", "img_meme");        
-		    img.setAttribute("src", datos[i].imagen );
+			img.setAttribute("src", datos[i].imagen );
+
+
 		    let divNombre = document.createElement("div");
 		    divNombre.setAttribute("class", "titulo-corazon")
 		    let nombre = document.createTextNode(datos[i].nombre);
@@ -125,7 +127,7 @@ function dibujaMemeTendencia(datos){
 	
 		    let img = document.createElement("img");
 		    img.setAttribute("class", "img_meme");        
-		    img.setAttribute("src", datos[i].imagen );
+			img.setAttribute("src", datos[i].imagen );
 		    let divNombre = document.createElement("div");
 		    divNombre.setAttribute("class", "titulo-corazon")
 		    let nombre = document.createTextNode(datos[i].nombre);

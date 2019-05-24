@@ -67,9 +67,11 @@ app.post('/login', (req, res) => {
       // Si validó bien, guardo la sesión y voy al home
       req.session.userId = req.body.user;
 
+      console.log("VALIDADO")
       res.redirect('/home');
     } else {
       // Si validó mal, destruyo la sesión (por si la hubiera) y recargo página inicial
+      console.log("NO VALIDADO")
       req.session.destroy();
       res.redirect('/login');
     }

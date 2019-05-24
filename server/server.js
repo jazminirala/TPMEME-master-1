@@ -76,12 +76,9 @@ app.post('/login', (req, res) => {
       res.redirect('/login');
     }
 
-  } else {
-    // Lo mismo si el usuario o clave no fueron enviados
-    req.session.destroy();
-    res.redirect('/login');
-  }
   
+    
+  }
 });
 
 
